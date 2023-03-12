@@ -1,0 +1,168 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+header {
+  height: 150px;
+  width: 100%;
+  background-color: #31758e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+}
+nav {
+  height: 50px;
+  width: 50%;
+  margin: 40px auto;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  width: 60%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+  float: left;
+}
+nav ul li {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  flex-wrap: wrap;
+  float: left;
+}
+#logo {
+  height: 100px;
+  width: 40%;
+  display: flex;
+
+  margin: 20px auto;
+}
+#object {
+  height: 100px;
+  width: 20%;
+  margin: 20px auto;
+}
+#object2 {
+  height: 20px;
+}
+#button {
+  height: 20px;
+  width: 150px;
+  font-size: 15px;
+  background-color: #ffbe15;
+  color: white;
+  padding: 3px;
+  transition: all 0.8s ease 0s;
+}
+#button:hover {
+  background-color: #e53935;
+}
+.link {
+  text-decoration: none;
+}
+/*#logo {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  height: 70%;
+  width: 30%;
+}*/
+#title {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+
+  font-size: 46px;
+  margin: 0px;
+  flex-wrap: wrap;
+}
+
+#page1 {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  background-color: gray;
+  flex-wrap: nowrap;
+}
+p {
+  margin: 0;
+}
+#font1 {
+  font-size: 40px;
+  margin: 10px auto;
+}
+#font2 {
+  font-size: 48px;
+}
+#font3 {
+  font-size: 24px;
+  margin: 20px auto;
+}
+#text {
+  padding: 100px 15%;
+  height: 300px;
+  width: 90%;
+}
+menu {
+  height: 600px;
+  width: 10%;
+  float: right;
+  margin: 0;
+  background-color: #ffbe15;
+}
+menu ul {
+  height: 400px;
+  min-width: 50px;
+
+  padding: 0px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+menu ul li {
+  list-style-type: none;
+  font-size: 20px;
+  margin: 30px 15px;
+  min-width: 50px;
+}
+.container {
+  display: flex; /* определяем контейнер как flex-контейнер*/
+  justify-content: space-between; /* распределяем элементы по горизонтали */
+  flex-wrap: wrap; /* разрешаем перенос элементов, 
+    если они не помещаются в одну строку */
+  width: 100%; /* ширина контейнера = ширина браузера */
+  margin: 20px auto; /* внешний отступ сверху и снизу по 20px, слева и справа - auto,
+     тем самым центрируя контейнер*/
+}
+
+.card {
+  width: 20%; /* ширина карточки = 25% от контейнера */
+  max-width: 200px; /* максимальная ширина 300px */
+  border: 1px solid black; /* черная рамка толщиной в 1px */
+  padding: 20px; /* внутренний отступ с каждой стороны по 20px*/
+}
+.card__image {
+  height: 120px; /* ширина 120рх */
+  width: 100%; /* ширина блока под изображение 100% */
+  max-width: 180px; /* максимальная ширина блока под
+    изображение 180px */
+  background-color: grey; /* серая заливка блока под
+  изображение */
+  margin: auto; /* автоматические отступы, центрируем блок
+  под изображение */
+}
+.card__description {
+  margin-top: 15px; /* внешний отступ в
+  15px */
+  text-align: center; /* выравниваем
+  текст по центру */
+}
