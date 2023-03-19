@@ -17,39 +17,45 @@ header {
     height: 70px;
   }
   #logo {
-    height: 70px;
-    width: 40%;
+    height: 60px;
+    width: 30%;
     display: flex;
 
     margin: 10px auto;
   }
-  div #title {
-    font-size: 34px;
+  div#title {
+    font-size: 31px;
   }
   li #button {
     height: 15px;
     width: 100px;
     font-size: 10px;
   }
-  header nav {
-    margin: 20px auto;
-  }
+
   #page1 {
     background-image: url(img2.png);
   }
+  container {
+    width: 100%;
+    display: flex;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+  }
 }
 nav {
-  height: 50px;
-  width: 50%;
-  margin: 40px auto;
+  height: 90px;
+  width: 40%;
+
   float: left;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 nav ul {
-  width: 60%;
-  height: 70px;
+  padding: 10px;
+  height: 90px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -59,13 +65,13 @@ nav ul {
 nav ul li {
   display: flex;
   justify-content: space-between;
-  margin: auto;
+  margin: auto 15px;
   flex-wrap: wrap;
   float: left;
 }
 #logo {
   height: 100px;
-  width: 40%;
+  width: 60%;
   display: flex;
 
   margin: 20px auto;
@@ -79,7 +85,7 @@ nav ul li {
   height: 35px;
 }
 #button {
-  height: 20px;
+  height: 30px;
   width: 150px;
   font-size: 15px;
   background-color: #ffbe15;
@@ -101,12 +107,12 @@ nav ul li {
   width: 30%;
 }*/
 #title {
-  display: flex;
-
+  width: 200px;
+  min-width: 200px;
   height: 100px;
 
   font-size: 46px;
-  margin: 0px;
+  margin: 5px;
   flex-wrap: wrap;
 }
 
@@ -165,7 +171,8 @@ p {
   font-size: 40px;
   display: flex;
   justify-content: space-around;
-  padding: 60px 0px;
+  padding: 60px 60px;
+  text-align: center;
 }
 #font5 {
   font-size: 20px;
@@ -228,4 +235,40 @@ container {
   font-size: 30px;
   color: #ffbe15;
   margin: 5px;
+}
+footer {
+  width: 100%;
+  height: 100%;
+  background-color: #d9d9d9;
+  display: flex;
+  flex-wrap: wrap;
+}
+#contacts {
+  width: 30%;
+  min-width: 200px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 60px;
+}
+#contacts p {
+  display: flex;
+  justify-content: center;
+}
+footer ul {
+  height: 100px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+footer ul li {
+  margin: 10px;
+}
+#numb {
+  width: 30%;
+  min-width: 200px;
+  margin: 15px 60px;
+  text-align: center;
 }
