@@ -27,9 +27,15 @@ header {
     font-size: 34px;
   }
   li #button {
-    height: 20px;
+    height: 15px;
     width: 100px;
     font-size: 10px;
+  }
+  header nav {
+    margin: 20px auto;
+  }
+  #page1 {
+    background-image: url(img2.png);
   }
 }
 nav {
@@ -70,7 +76,7 @@ nav ul li {
   margin: 20px auto;
 }
 #object2 {
-  height: 20px;
+  height: 35px;
 }
 #button {
   height: 20px;
@@ -108,9 +114,18 @@ nav ul li {
   height: 40%px;
   width: 100%;
   display: flex;
-  background-color: gray;
+  background-image: url(img1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   flex-wrap: nowrap;
   position: relative;
+  color: white;
+}
+#link1 {
+  font-size: 24px;
+  margin: 20px auto;
+  text-decoration: none;
+  color: #ff907e;
 }
 p {
   margin: 0;
@@ -133,35 +148,84 @@ p {
   height: inherit;
 }
 
-.container {
-  display: flex; /* определяем контейнер как flex-контейнер*/
-  justify-content: space-between; /* распределяем элементы по горизонтали */
-  flex-wrap: wrap; /* разрешаем перенос элементов, 
-    если они не помещаются в одну строку */
-  width: 100%; /* ширина контейнера = ширина браузера */
-  margin: 20px auto; /* внешний отступ сверху и снизу по 20px, слева и справа - auto,
-     тем самым центрируя контейнер*/
+#page2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffbe15;
+}
+#text2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#font4 {
+  font-size: 40px;
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 0px;
+}
+#font5 {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 10px 0px;
+  width: 50%;
+}
+container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 20px auto;
+}
+.card {
+  width: 220px;
+  height: 450px;
+  margin: 10px;
+  position: relative;
+  border: 1px solid #f5dde1;
 }
 
-.card {
-  width: 20%; /* ширина карточки = 25% от контейнера */
-  max-width: 200px; /* максимальная ширина 300px */
-  border: 1px solid black; /* черная рамка толщиной в 1px */
-  padding: 20px; /* внутренний отступ с каждой стороны по 20px*/
+.product,
+.description {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+  background-color: #fff;
+  backface-visibility: hidden;
+  transition: 1s;
 }
-.card__image {
-  height: 120px; /* ширина 120рх */
-  width: 100%; /* ширина блока под изображение 100% */
-  max-width: 180px; /* максимальная ширина блока под
-    изображение 180px */
-  background-color: grey; /* серая заливка блока под
-  изображение */
-  margin: auto; /* автоматические отступы, центрируем блок
-  под изображение */
+.description a {
+  display: inline-block;
+  padding: 10px 10px;
+  margin: 20px auto;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ffbe15;
 }
-.card__description {
-  margin-top: 15px; /* внешний отступ в
-  15px */
-  text-align: center; /* выравниваем
-  текст по центру */
+.description {
+  padding: 20px;
+  box-sizing: border-box;
+  transform: rotateY(180deg);
+}
+.card:hover .product {
+  transform: rotateY(180deg);
+}
+
+.card:hover .description {
+  transform: rotateY(360deg);
+}
+#font6 {
+  font-size: 30px;
+  color: #ffbe15;
+  margin: 5px;
 }
