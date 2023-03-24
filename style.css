@@ -120,7 +120,7 @@ nav ul li {
   height: 40%px;
   width: 100%;
   display: flex;
-  background-image: url(img1.png);
+  background-image: url(./images/img1.png);
   background-size: cover;
   background-repeat: no-repeat;
   flex-wrap: nowrap;
